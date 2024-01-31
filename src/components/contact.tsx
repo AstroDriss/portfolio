@@ -33,7 +33,9 @@ const contact = () => {
       })
       .catch(() => {
         setSending(false);
-        alert("Sorry Your Email havn't sent.");
+        alert(
+          "Sorry Your Email havn't sent. contact this email: drisspennywise@gmail.com"
+        );
       });
   };
 

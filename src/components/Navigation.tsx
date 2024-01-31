@@ -15,13 +15,16 @@ const Navigation = () => {
       <ul className="hidden sm:flex gap-4">
         {textLinks.map(({ label, href }) => (
           <li key={label}>
-            <a href={href}>{label}</a>
+            <a className="hover:underline" href={href}>
+              {label}
+            </a>
           </li>
         ))}
       </ul>
 
       <button onClick={() => setToggle(!toggle)} className="sm:hidden">
         {toggle ? <IoClose size={28} /> : <MdOutlineSegment size={28} />}
+        <span className="sr-only">{toggle ? "close menu" : "open menu"}</span>
       </button>
 
       <ul
