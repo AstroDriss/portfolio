@@ -1,0 +1,95 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string | undefined;
+  description?: string | undefined;
+}
+
+const {
+  title = "Douiri Idriss: Portfolio",
+  description = "The personal site of Douiri Idriss",
+} = Astro.props;
+---
+
+<meta charset="UTF-8" />
+<meta name="description" content={description} />
+<meta name="viewport" content="width=device-width" />
+<title>{title}</title>
+
+<meta
+  name="keywords"
+  content="portfolio,developer,douiri idriss,person,web developer,programmer"
+/>
+<meta name="robots" content="index, follow" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="language" content="English" />
+<meta name="author" content="Idriss Douiri" />
+
+<meta property="og:title" content={title} />
+<meta property="og:site_name" content="douiri" />
+<meta property="og:url" content="https://douiri.org" />
+<meta property="og:description" content={description} />
+<meta property="og:type" content="profile" />
+
+<link
+  rel="icon"
+  media="(prefers-color-scheme: light)"
+  type="image/svg+xml"
+  href="/logo/LOGO D' light_mode.svg"
+/>
+<link
+  rel="icon"
+  media="(prefers-color-scheme: dark)"
+  type="image/svg+xml"
+  href="/logo/LOGO D' dark_mode.svg"
+/>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Idriss Douiri",
+    "birthDate": "2005-01-23",
+    "jobTitle": "Web Developer",
+    "image": "",
+    "url": "https://www.douiri.org",
+    "description": "a web developer specializing in front-end and back-end technologies.",
+    "sameAs": [
+      "https://www.instagram.com/drs_artz/",
+      "https://www.linkedin.com/in/johndoe",
+      "https://twitter.com/drs_artz",
+      "https://www.facebook.com/drsartz/",
+      "https://github.com/AstroDriss"
+    ],
+    "alumniOf": {
+      "@type": "EducationalOrganization",
+      "name": "Université Ibn Zohr:",
+      "url": "https://www.uiz.ac.ma/"
+    },
+    "hasSkill": [
+      "Self learner",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Reactjs",
+      "TailwindCSS"
+    ],
+    "hasPart": [
+      {
+        "@type": "CreativeWork",
+        "name": "アニメ app",
+        "description": "Animes information using Jikan API",
+        "url": "https://anime-app-sage.vercel.app/",
+        "image": "../assets/screenshot-home.png"
+      },
+      {
+        "@type": "CreativeWork",
+        "name": "Todo App",
+        "description": "a todo list app with dark and light mode",
+        "url": "https://github.com/AstroDriss/Frontend-Mentor-Todo-app",
+        "image": "../assets/todo app screenshot.png"
+      }
+    ]
+  }
+</script>
