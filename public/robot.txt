@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://douiri.org/sitemap.xml
