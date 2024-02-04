@@ -7,33 +7,44 @@ const currentYear = new Date().getFullYear();
 <footer
   class="bg-orange-50 border-t mt-4 py-4 mx-auto max-w-5xl rounded-2xl mb-2"
 >
-  <div class="flex justify-between items-center px-4">
+  <div
+    class="flex flex-col sm:flex-row gap-2 justify-between items-center px-4"
+  >
     <div class="group">
       <p>&copy; {currentYear} Idriss Douiri</p>
     </div>
-    <p class="flex gap-2">
-      <a target="_blank" href="https://github.com/AstroDriss" title="github">
-        <GithubLogo size={30} />
-        <span class="sr-only">github</span>
-      </a>
 
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/in/johndoe"
-        title="linkedin"
-      >
-        <LinkedinLogo size={30} />
-        <span class="sr-only">linkedin</span>
-      </a>
-      <a
-        target="_blank"
-        href="https://www.instagram.com/drs_artz/"
-        title="instagram"
-      >
-        <InstagramLogo size={30} />
-        <span class="sr-only">instagram</span>
-      </a>
-    </p>
+    <a href="/privacy">privacy</a>
+
+    <ul class="flex gap-2">
+      <li>
+        <a target="_blank" href="https://github.com/AstroDriss" title="github">
+          <GithubLogo size={30} />
+          <span class="sr-only">github</span>
+        </a>
+      </li>
+
+      <li>
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/johndoe"
+          title="linkedin"
+        >
+          <LinkedinLogo size={30} />
+          <span class="sr-only">linkedin</span>
+        </a>
+      </li>
+      <li>
+        <a
+          target="_blank"
+          href="https://www.instagram.com/drs_artz/"
+          title="instagram"
+        >
+          <InstagramLogo size={30} />
+          <span class="sr-only">instagram</span>
+        </a>
+      </li>
+    </ul>
   </div>
 </footer>
 <style>

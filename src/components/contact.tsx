@@ -41,7 +41,7 @@ const contact = () => {
 
   return (
     <section id="contact">
-      <h2 className="font-semibold text-3xl mb-3">Contact Me</h2>
+      <h2 className="font-semibold font-display text-4xl mb-3">Contact Me</h2>
       <form className="flex flex-col" onSubmit={sendEmail}>
         <div>
           <label htmlFor="name">Name:</label>
