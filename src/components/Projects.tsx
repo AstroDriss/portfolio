@@ -65,13 +65,22 @@ const Projects = () => {
             </a>
           </div>
 
-          <img
-            className="rounded-tl-[inherit] rounded-tr-[inherit]"
-            src={project.img.src}
-            alt={project.img.alt}
-            loading="lazy"
-            decoding="async"
-          />
+          <picture className="rounded-tl-[inherit] rounded-tr-[inherit]">
+            {project.img.webp && (
+              <source
+                className="rounded-tl-[inherit] rounded-tr-[inherit]"
+                src={project.img.webp}
+                type="image/webp"
+              />
+            )}
+            <img
+              className="rounded-tl-[inherit] rounded-tr-[inherit]"
+              src={project.img.src}
+              alt={project.img.alt}
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
 
           <div className="p-4">
             <ul className="flex gap-2 items-center mb-1">
