@@ -69,7 +69,7 @@ const Projects = () => {
             {project.img.webp && (
               <source
                 className="rounded-tl-[inherit] rounded-tr-[inherit]"
-                src={project.img.webp}
+                srcSet={project.img.webp}
                 type="image/webp"
               />
             )}
