@@ -1,10 +1,9 @@
 html {
   scroll-behavior: smooth;
 }
-
 @font-face {
   font-family: "meow script";
-  src: local("meow script"), url("MeowScript-Regular.ttf") format("ttf");
+  src: local("meow script"), url("/fonts/MeowScript-Regular.ttf") format("ttf");
 }
 
 .my-masonry-grid {
