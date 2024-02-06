@@ -1,41 +1,42 @@
-import BallCanvas from "./canvas/Ball";
 import {
-  html,
-  css,
-  tailwindcss,
-  git,
-  js,
-  mysql,
-  nextjs,
-  reactjs,
-  ts,
-} from "../assets/icons";
+  ReactOriginal,
+  TailwindcssPlain,
+  JavascriptOriginal,
+  Html5Original,
+  Css3Original,
+  NextjsOriginal,
+  TypescriptOriginal,
+  GithubOriginal,
+  GitOriginal,
+  MysqlOriginal,
+} from "devicons-react";
 
 const Skills = () => {
   const skills = [
-    { icon: reactjs, label: "Reactjs" },
-    { icon: tailwindcss, label: "TailwindCSS" },
-    { icon: js, label: "JavaScript" },
-    { icon: nextjs, label: "Nextjs" },
-    { icon: ts, label: "TypeScript" },
-    { icon: git, label: "Git" },
-    { icon: mysql, label: "MySQL" },
-    { icon: html, label: "HTML" },
-    { icon: css, label: "CSS" },
+    { Tag: ReactOriginal, label: "Reactjs" },
+    { Tag: TailwindcssPlain, label: "TailwindCSS" },
+    { Tag: JavascriptOriginal, label: "JavaScript" },
+    { Tag: Html5Original, label: "HTML" },
+    { Tag: Css3Original, label: "CSS" },
+    { Tag: NextjsOriginal, label: "Nextjs" },
+    { Tag: TypescriptOriginal, label: "TypeScript" },
+    { Tag: GithubOriginal, label: "Github" },
+    { Tag: GitOriginal, label: "Git" },
+    { Tag: MysqlOriginal, label: "MySQL" },
   ];
 
   return (
     <section className="my-6">
       <h2 className="text-4xl font-display my-2 font-semibold">Skills</h2>
       <ul className="flex flex-wrap gap-4 justify-center">
-        {skills.map(({ icon, label }, i) => (
+        {skills.map(({ Tag, label }, i) => (
           <li
             key={i}
-            className="w-14 h-14 sm:w-24 sm:h-24 rounded-full flex justify-center items-center "
+            className="w-20 h-20 rounded-full bg-rose-50 flex justify-center items-center before:border before:absolute relative before:inset-0 before:rounded-full before:-left-1 before:-top-1"
             title={label}
           >
             <span className="sr-only">{label}</span>
-            <BallCanvas icon={icon.src} />
+            <Tag size={30} />
           </li>
         ))}
       </ul>
