@@ -42,40 +42,55 @@ const contact = () => {
   return (
     <section id="contact">
       <h2 className="font-semibold font-display text-4xl mb-3">Contact Me</h2>
-      <form className="flex flex-col" onSubmit={sendEmail}>
-        <div>
-          <label htmlFor="name">Name:</label>
+      <form className="flex flex-col gap-4" onSubmit={sendEmail}>
+        <div className="relative">
           <input
-            className="rounded-md p-2 border-sky-800 border w-full"
+            className="border w-full rounded-md p-2 peer placeholder:opacity-0 border-gray-400 bg-gray-50 focus:outline-sky-500"
             type="text"
             name="from_name"
             placeholder="name"
             id="name"
             required
           />
+          <label
+            htmlFor="name"
+            className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-gray-50"
+          >
+            Name
+          </label>
         </div>
 
-        <div>
-          <label htmlFor="email">Email</label>
+        <div className="relative">
           <input
-            className="rounded-md p-2 border-sky-800 border w-full"
+            className="border w-full rounded-md p-2 peer placeholder:opacity-0 border-gray-400 bg-gray-50 focus:outline-sky-500"
             type="email"
             name="email_from"
             placeholder="email@domain.com"
             id="email"
             required
           />
+          <label
+            className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-gray-50"
+            htmlFor="email"
+          >
+            Email
+          </label>
         </div>
 
-        <div>
-          <label htmlFor="message">message</label>
+        <div className="relative">
           <textarea
-            className="rounded-md p-2 border-sky-800 w-full border h-60"
+            className="border w-full rounded-md p-2 peer h-60 placeholder:opacity-0 border-gray-400 bg-gray-50 focus:outline-sky-500"
             placeholder="message..."
             name="message"
             id="message"
             required
           ></textarea>
+          <label
+            className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-gray-50"
+            htmlFor="message"
+          >
+            message
+          </label>
         </div>
 
         <button

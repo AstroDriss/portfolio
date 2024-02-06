@@ -66,13 +66,11 @@ const Projects = () => {
           </div>
 
           <picture className="rounded-tl-[inherit] rounded-tr-[inherit]">
-            {project.img.webp && (
-              <source
-                className="rounded-tl-[inherit] rounded-tr-[inherit]"
-                srcSet={project.img.webp}
-                type="image/webp"
-              />
-            )}
+            <source
+              className="rounded-tl-[inherit] rounded-tr-[inherit]"
+              srcSet={project.img.webp?.replaceAll(" ", "%20") || ""}
+              type="image/webp"
+            />
             <img
               className="rounded-tl-[inherit] rounded-tr-[inherit]"
               src={project.img.src}
