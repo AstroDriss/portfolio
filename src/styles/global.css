@@ -3,7 +3,8 @@ html {
 }
 @font-face {
   font-family: "meow script";
-  src: local("meow script"), url("/fonts/MeowScript-Regular.ttf") format("ttf");
+  src: local("meow script"),
+    url("/fonts/MeowScript-Regular.ttf") format("truetype");
 }
 
 .my-masonry-grid {
