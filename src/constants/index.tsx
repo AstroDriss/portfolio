@@ -60,4 +60,5 @@ export const projects = [
   },
 ];
 
-export const about = `Passionate web developer based on Morocco who loves learning new skills. working with both front-end and back-end technologies, dedicated to delivering seamless user experiences through clean code.`;
+// export const about = `Passionate web developer based on Morocco who loves learning new skills. working with both front-end and back-end technologies, dedicated to delivering seamless user experiences through clean code.`;
+export const about = `Versatile and highly skilled web developer with an array of front-end and back-end experience. Based in Morocco, I am dedicated to expanding my clientele while delivering seamless user experiences with accuracy and precision.`;
