@@ -27,7 +27,9 @@ const Skills = () => {
 
   return (
     <section className="my-6">
-      <h2 className="text-4xl font-display my-2 font-semibold">Skills</h2>
+      <h2 className="text-4xl font-display my-8 underline font-semibold">
+        Skills
+      </h2>
       <ul className="flex flex-wrap gap-4 justify-center">
         {skills.map(({ Tag, label }, i) => (
           <li
