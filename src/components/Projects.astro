@@ -1,5 +1,4 @@
 ---
-import { Image } from "astro:assets";
 import { projects } from "../constants";
 
 import {
@@ -42,11 +41,12 @@ const devIconsMap: { [key: string]: string } = {
         </div>
 
         <div class="overflow-hidden rounded-tl-[inherit] rounded-tr-[inherit]">
-          <Image
-            src={project.img.src}
+          <img
+            src={project.img.src.src}
             alt={project.img.alt}
-            widths={[300, 720]}
-            sizes={`(max-width: 360px) 300px, (max-width: 750px) 720px`}
+            width="318px"
+            loading="lazy"
+            decoding="async"
           />
         </div>
 
