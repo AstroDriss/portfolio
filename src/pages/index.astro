@@ -4,7 +4,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Page section components
 import Hero from "../components/Hero.astro";
-import Projects from "../components/Projects";
+import Projects from "../components/Projects.astro";
 import About from "../components/About.astro";
 import Contact from "../components/contact.tsx";
 import Skills from "../components/Skills.tsx";
@@ -22,7 +22,7 @@ import Skills from "../components/Skills.tsx";
       <h2 class="font-semibold text-4xl my-8 font-display underline">
         Projects
       </h2>
-      <Projects client:only="react" />
+      <Projects />
     </section>
 
     <Contact client:visible />

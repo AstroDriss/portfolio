@@ -12,7 +12,7 @@ export const projects = [
     title: "Tic-Tac-Toe Game",
     img: {
       alt: "tic-tac-toe screenshot",
-      src: tictactoe.src,
+      src: tictactoe,
     },
     repo: "https://github.com/AstroDriss/tic-tac-toe-minimax",
     live: "https://tic-tac-toe-minimax-gamma.vercel.app/",
@@ -24,8 +24,8 @@ export const projects = [
     title: "TODO app",
     img: {
       alt: "todo app screenshot",
-      src: todo.src,
-      webp: todoWebp.src,
+      src: todo,
+      webp: todoWebp,
     },
     repo: "https://github.com/AstroDriss/Frontend-Mentor-Todo-app",
     live: "https://frontend-mentor-todo-app-sigma.vercel.app/",
@@ -33,30 +33,30 @@ export const projects = [
     desc: "with drag and drop functionality for reordering and theme toggle",
   },
   {
-    id: 3,
-    title: "Fylo dark theme landing page",
-    img: {
-      alt: "todo app screenshot",
-      src: fylo.src,
-      webp: fyloWebp.src,
-    },
-    repo: "https://github.com/AstroDriss/Fylo-landing-page-with-dark-theme-and-features-grid",
-    live: "https://fylo-landing-page-with-dark-theme-and-features-grid-gamma.vercel.app/",
-    tech: ["html", "css"],
-    desc: "a common layout  for landing pages with dark theme and features grid.",
-  },
-  {
     id: 4,
     title: "アニメ APP",
     img: {
       alt: "anime app screenshot",
-      src: anime.src,
-      webp: animeWebp.src,
+      src: anime,
+      webp: animeWebp,
     },
     repo: "https://github.com/AstroDriss/anime-app",
     live: "https://anime-app-sage.vercel.app/",
     tech: ["reactjs", "ts", "tailwindcss", "API"],
     desc: "Using the Jikan API to display information about animes such as characters, episodes, etc...",
+  },
+  {
+    id: 3,
+    title: "Fylo dark theme landing page",
+    img: {
+      alt: "todo app screenshot",
+      src: fylo,
+      webp: fyloWebp,
+    },
+    repo: "https://github.com/AstroDriss/Fylo-landing-page-with-dark-theme-and-features-grid",
+    live: "https://fylo-landing-page-with-dark-theme-and-features-grid-gamma.vercel.app/",
+    tech: ["html", "css"],
+    desc: "a common layout  for landing pages with dark theme and features grid.",
   },
 ];
 
