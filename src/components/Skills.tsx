@@ -34,7 +34,7 @@ const Skills = () => {
         {skills.map(({ Tag, label }, i) => (
           <li
             key={i}
-            className="w-20 h-20 rounded-full bg-rose-50 flex justify-center items-center before:border before:absolute relative before:inset-0 before:rounded-full before:-left-1 before:-top-1"
+            className="w-20 h-20 rounded-full bg-rose-50 flex justify-center items-center before:border before:border-gray-400 before:absolute relative before:inset-0 before:rounded-full before:-left-1 before:-top-1"
             title={label}
           >
             <span className="sr-only">{label}</span>
