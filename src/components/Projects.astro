@@ -41,13 +41,19 @@ const devIconsMap: { [key: string]: string } = {
         </div>
 
         <div class="overflow-hidden rounded-tl-[inherit] rounded-tr-[inherit]">
-          <img
-            src={project.img.src.src}
-            alt={project.img.alt}
-            width="318px"
-            loading="lazy"
-            decoding="async"
-          />
+          <picture>
+            <source
+              srcset={project.img.webp.src.replaceAll(" ", "%20")}
+              type="image/webp"
+            />
+
+            <img
+              src={project.img.src.src}
+              alt={project.img.alt}
+              loading="lazy"
+              decoding="async"
+            />
+          </picture>
         </div>
 
         <div class="p-4">
