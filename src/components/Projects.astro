@@ -43,14 +43,10 @@ const devIconsMap: { [key: string]: string } = {
 
         <div class="overflow-hidden rounded-tl-[inherit] rounded-tr-[inherit]">
           <Picture
-            formats={["avif", "webp"]}
             src={project.img.src}
             alt={project.img.alt}
-            widths={[300, 540, 720, project.img.src.width]}
-            sizes={`(max-width: 360px) 300px, (max-width: 720px) 540px, (max-width: 1600px) 720px, ${project.img.src.width}px`}
-            pictureAttributes={{
-              class: "rounded-tl-[inherit] rounded-tr-[inherit]",
-            }}
+            widths={[300, 540, 720]}
+            sizes={`(max-width: 360px) 300px, (max-width: 720px) 540px, (max-width: 1600px) 720px`}
           />
         </div>
 
