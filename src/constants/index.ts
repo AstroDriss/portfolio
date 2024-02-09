@@ -1,10 +1,7 @@
 import tictactoe from "../assets/tic-tac-toe screenshot.png";
 import todo from "../assets/todo app screenshot.png";
-import todoWebp from "../assets/todo app screenshot.webp";
 import fylo from "../assets/fylo screenshot.png";
-import fyloWebp from "../assets/fylo screenshot.webp";
 import anime from "../assets/screenshot-home.png";
-import animeWebp from "../assets/screenshot-home.webp";
 
 export const projects = [
   {
@@ -25,7 +22,6 @@ export const projects = [
     img: {
       alt: "todo app screenshot",
       src: todo,
-      webp: todoWebp,
     },
     repo: "https://github.com/AstroDriss/Frontend-Mentor-Todo-app",
     live: "https://frontend-mentor-todo-app-sigma.vercel.app/",
@@ -38,7 +34,6 @@ export const projects = [
     img: {
       alt: "anime app screenshot",
       src: anime,
-      webp: animeWebp,
     },
     repo: "https://github.com/AstroDriss/anime-app",
     live: "https://anime-app-sage.vercel.app/",
@@ -51,7 +46,6 @@ export const projects = [
     img: {
       alt: "todo app screenshot",
       src: fylo,
-      webp: fyloWebp,
     },
     repo: "https://github.com/AstroDriss/Fylo-landing-page-with-dark-theme-and-features-grid",
     live: "https://fylo-landing-page-with-dark-theme-and-features-grid-gamma.vercel.app/",

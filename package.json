@@ -16,8 +16,6 @@
     "@astrojs/tailwind": "^5.1.0",
     "@emailjs/browser": "^3.12.1",
     "@phosphor-icons/react": "^2.0.15",
-    "@react-three/drei": "^9.91.1",
-    "@react-three/fiber": "^8.15.12",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
     "astro": "^4.0.1",
