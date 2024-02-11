@@ -3,6 +3,23 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout>
+  <Fragment slot="head">
+    <script is:inline type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "privacy",
+            "item": "https://douiri.org/privacy"
+          }
+        ]
+      }
+    </script>
+  </Fragment>
+
   <main class="mt-8 px-4">
     <h1 class="text-3xl font-semibold">Privacy Policy</h1>
 
