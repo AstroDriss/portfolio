@@ -41,7 +41,7 @@ const contact = () => {
 
   return (
     <section id="contact">
-      <h2 className="font-semibold font-display text-4xl mb-4 underline">
+      <h2 className="font-semibold font-display text-4xl my-8 underline">
         Contact Me
       </h2>
       <form className="flex flex-col gap-4" onSubmit={sendEmail}>

@@ -20,3 +20,18 @@ html {
 .my-masonry-grid_column > div {
   margin-bottom: 20px;
 }
+
+.skeleton {
+  display: block;
+  background-color: #3d3f5421;
+  animation: 2s ease-in-out 0.5s infinite normal none running skeleton;
+}
+@keyframes skeleton {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}

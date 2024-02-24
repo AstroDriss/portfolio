@@ -8,6 +8,7 @@ import Projects from "../components/Projects.astro";
 import About from "../components/About.astro";
 import Contact from "../components/contact.tsx";
 import Skills from "../components/Skills.tsx";
+import RecentArticles from "../components/RecentArticles.tsx";
 ---
 
 <BaseLayout>
@@ -29,6 +30,7 @@ import Skills from "../components/Skills.tsx";
       <h2 class="font-semibold text-4xl my-8 font-display underline">
         Recent articles
       </h2>
+      <RecentArticles client:load />
     </section>
 
     <Contact client:visible />
