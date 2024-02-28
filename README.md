@@ -1,3 +1,3 @@
 # Douiri's Portfolio
 
-[link](https://douiri.org)
+[link](https://idriss.douiri.org)

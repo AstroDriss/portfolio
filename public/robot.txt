@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://douiri.org/sitemap.xml
+Sitemap: https://idriss.douiri.org/sitemap.xml

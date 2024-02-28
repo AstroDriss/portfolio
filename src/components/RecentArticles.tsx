@@ -20,7 +20,7 @@ const RecentArticles = () => {
   useEffect(() => {
     setLoading(true);
     const controller = new AbortController();
-    fetch("https://blog.douiri.org/api/latestposts.json", {
+    fetch("https://douiri.org/api/latestposts.json", {
       signal: controller.signal,
     })
       .then((res) => res.json())
