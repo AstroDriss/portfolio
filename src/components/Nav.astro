@@ -2,25 +2,24 @@
 import Navigation from "./Navigation.tsx";
 ---
 
-<header class="flex items-center px-4 py-1">
-  <a href="/" class="logo flex items-center">
+<header class="flex justify-between items-center px-4 py-1">
+  <a href="/" class="flex items-center">
     <img
       src="/logo/LOGO D' light_mode.svg"
       width="40px"
       height="40px"
       alt="logo"
     />
-    <img src="/logo/ouiri.svg" alt="" class="relative -bottom-1" width="45px" />
+    <img
+      src="/logo/ouiri.svg"
+      alt=""
+      aria-hidden="true"
+      class="relative -bottom-1"
+      width="45px"
+    />
   </a>
 
   <Navigation client:media="(max-width: 640px)" />
-
-  <a
-    href="https://douiri.org"
-    target="_blank"
-    class="border bg-orange-400/35 backdrop-blur-[200px] border-orange-800 text-orange-800 px-4 py-1 rounded-xl hidden min-[640px]:block"
-    >Blog</a
-  >
 </header>
 
 <style>
@@ -33,7 +32,8 @@ import Navigation from "./Navigation.tsx";
       to right,
       rgb(255 255 255 / 0.5),
       rgb(255 255 255 / 0.1),
-      rgb(255 255 255 / 0.5)
+      rgb(255 255 255 / 0.6) 85%,
+      rgb(255 255 255 / 0.4)
     );
     border: 2px solid #fff;
     backdrop-filter: blur(200px);

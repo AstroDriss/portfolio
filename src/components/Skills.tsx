@@ -20,7 +20,6 @@ const Skills = () => {
     { img: css, label: "CSS" },
     { img: nextjs, label: "Nextjs" },
     { img: ts, label: "TypeScript" },
-    { img: github, label: "Github" },
     { img: git, label: "Git" },
     { img: mysql, label: "MySQL" },
   ];
