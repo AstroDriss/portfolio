@@ -35,3 +35,36 @@ html {
     opacity: 0.4;
   }
 }
+
+.sending {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sending span {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transform-origin: center;
+}
+.sending span:nth-of-type(1) {
+  animation: ease-in-out 1s alternate infinite breathe;
+}
+.sending span:nth-of-type(2) {
+  animation: ease-in-out 1s 100ms alternate infinite breathe;
+}
+.sending span:nth-of-type(3) {
+  animation: ease-in-out 1s 200ms alternate infinite breathe;
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(0);
+  }
+  40% {
+    transform: scale(1);
+  }
+}

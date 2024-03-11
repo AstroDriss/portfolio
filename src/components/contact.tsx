@@ -34,7 +34,7 @@ const contact = () => {
       .catch(() => {
         setSending(false);
         alert(
-          "Sorry Your Email havn't sent. contact this email: drisspennywise@gmail.com"
+          "Sorry Your Email hasn't been sent. try again or contact this email: drisspennywise@gmail.com"
         );
       });
   };
@@ -96,11 +96,17 @@ const contact = () => {
         </div>
 
         <button
-          className="text-sky-100 bg-sky-900 rounded-md py-2 block hover:bg-sky-800"
+          className={`text-sky-100 bg-sky-900 rounded-md py-2  flex items-center justify-center min-h-[40px] ${
+            isSending ? "cursor-wait" : "hover:bg-sky-800"
+          }`}
           disabled={isSending}
         >
           {isSending ? (
-            <span>sending...</span>
+            <div className="sending">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
           ) : (
             <span className="flex items-center justify-center gap-2">
               {" "}
