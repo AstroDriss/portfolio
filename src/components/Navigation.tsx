@@ -44,7 +44,7 @@ const Navigation = () => {
       <ul
         className={`${
           toggle ? "block" : "hidden"
-        } flex-col absolute w-full mt-3 col-span-2 sm:hidden gap-2 overflow-hidden right-0 shadow-md border-2 border-white bg-white rounded-xl top-11`}
+        } flex-col mobile-nav absolute w-full mt-3 col-span-2 sm:hidden gap-2 overflow-hidden right-0 shadow-md border-2 border-white bg-white rounded-xl top-11`}
       >
         {textLinks.map(({ label, href, blank }) => (
           <li key={href}>
