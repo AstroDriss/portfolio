@@ -6,6 +6,8 @@ import fylo from "../assets/fylo screenshot.png";
 import fyloWebp from "../assets/fylo screenshot.webp";
 import anime from "../assets/screenshot-home.png";
 import animeWebp from "../assets/screenshot-home.webp";
+import connect4 from "../assets/connect-four.png";
+import connect4Webp from "../assets/connect-four.webp";
 
 export const projects = [
   {
@@ -20,6 +22,19 @@ export const projects = [
     live: "https://tic-tac-toe-minimax-gamma.vercel.app/",
     tech: ["nextjs", "ts", "tailwindcss"],
     desc: "using the minimax algorithme",
+  },
+  {
+    id: 5,
+    title: "Connect four Game",
+    img: {
+      alt: "connect four game screenshot",
+      src: connect4,
+      webp: connect4Webp,
+    },
+    repo: "https://github.com/AstroDriss/connect-four",
+    live: "https://connect-four-five-zeta.vercel.app/",
+    tech: ["html", "css", "js"],
+    desc: "play vs AI or another player.",
   },
   {
     id: 2,
