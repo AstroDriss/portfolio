@@ -1,5 +1,5 @@
 ---
-// Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
+// Layout import
 import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Page section components
@@ -12,7 +12,7 @@ import RecentArticles from "../components/RecentArticles.tsx";
 ---
 
 <BaseLayout>
-  <main>
+  <main class="grid gap-16">
     <Hero />
 
     <About />
@@ -20,17 +20,21 @@ import RecentArticles from "../components/RecentArticles.tsx";
     <Skills client:visible />
 
     <section id="projects">
-      <h2 class="font-semibold text-4xl my-8 font-display underline">
+      <h2 class="font-semibold text-4xl mb-8 font-display underline">
         Projects
       </h2>
       <Projects />
     </section>
 
     <section>
-      <h2 class="font-semibold text-4xl my-8 font-display underline">
-        Recent articles
-      </h2>
-      <RecentArticles client:load />
+      <div class="flex justify-between mb-8 items-center">
+        <h2 class="font-semibold text-4xl font-display underline">
+          Recent articles
+        </h2>
+
+        <a href="https://douiri.org" target="_blank">view more &RightArrow;</a>
+      </div>
+      {import.meta.env.PROD && <RecentArticles client:load />}
     </section>
 
     <Contact client:visible />
