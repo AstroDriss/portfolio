@@ -15,7 +15,7 @@ const BlogLogo = () => (
     viewBox="0 0 886.74 579.75"
     aria-hidden="true"
     width="30"
-    class="inline"
+    className="inline"
   >
     <path
       class="cls-2"
