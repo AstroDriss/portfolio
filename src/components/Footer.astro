@@ -1,20 +1,60 @@
 ---
-import { GithubLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react";
+import {
+  GithubLogo,
+  InstagramLogo,
+  LinkedinLogo,
+  Envelope,
+  Phone,
+} from "@phosphor-icons/react";
 
 const currentYear = new Date().getFullYear();
 ---
 
 <footer
-  class="bg-orange-50 border-t mt-4 py-4 mx-auto max-w-5xl rounded-2xl mb-2"
+  class="bg-gray-800 text-gray-200 border-t mt-12 py-6 px-4 mx-auto max-w-7xl rounded-2xl mb-2"
 >
   <div
-    class="flex flex-col sm:flex-row gap-2 justify-between items-center px-4"
+    class="grid md:grid-cols-4 sm:grid-cols-2 gap-4 justify-items-center items-center"
   >
-    <div class="group">
-      <p>&copy; {currentYear} Idriss Douiri</p>
-    </div>
+    <address class="text-center sm:text-left">
+      <p>
+        Thank you for visiting my portfolio. If you have any questions or would
+        like to discuss potential collaborations, please feel free to contact
+        me.
+      </p>
+    </address>
 
-    <a href="/privacy">privacy</a>
+    <ul>
+      <li>
+        <p class="text-gray-50 font-semibold text-center sm:text-left">About</p>
+      </li>
+      <li class="text-center sm:text-left">
+        <a href="https://douiri.org">Blog</a>
+      </li>
+      <li class="text-center sm:text-left"><a href="/privacy">Privacy</a></li>
+    </ul>
+
+    <ul>
+      <li>
+        <p class="text-gray-50 font-semibold text-center sm:text-left">
+          Contact
+        </p>
+      </li>
+      <li>
+        <a
+          href="tel:+212651501766"
+          class="flex gap-2 items-center justify-center sm:justify-start"
+          ><Phone />+212 651 501 766</a
+        >
+      </li>
+      <li>
+        <a
+          href="mailto:drisspennywise@gmail.com"
+          class="flex gap-2 items-center justify-center sm:justify-start"
+          ><Envelope />drisspennywise@gmail.com</a
+        >
+      </li>
+    </ul>
 
     <ul class="flex gap-2">
       <li>
@@ -27,7 +67,7 @@ const currentYear = new Date().getFullYear();
       <li>
         <a
           target="_blank"
-          href="https://www.linkedin.com/in/johndoe"
+          href="https://www.linkedin.com/in/driss-douiri-34a69a229/"
           title="linkedin"
         >
           <LinkedinLogo size={30} />
@@ -46,17 +86,16 @@ const currentYear = new Date().getFullYear();
       </li>
     </ul>
   </div>
+
+  <p class="text-center mt-10">&copy; {currentYear} Idriss Douiri</p>
 </footer>
 <style>
   footer a {
-    color: var(--gray-400);
-    text-decoration: 1px solid underline transparent;
-    text-underline-offset: 0.25em;
-    transition: text-decoration-color var(--theme-transition);
+    transition: color 150ms;
   }
 
   footer a:hover,
   footer a:focus {
-    text-decoration-color: currentColor;
+    color: theme("colors.gray[50]");
   }
 </style>
