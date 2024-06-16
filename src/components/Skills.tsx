@@ -9,24 +9,26 @@ import {
   github,
   git,
   mysql,
+  astro,
 } from "../assets/icons";
 
 const Skills = () => {
   const skills = [
-    { img: reactjs, label: "Reactjs" },
-    { img: tailwindcss, label: "TailwindCSS" },
-    { img: js, label: "JavaScript" },
     { img: html, label: "HTML" },
     { img: css, label: "CSS" },
-    { img: nextjs, label: "Nextjs" },
+    { img: js, label: "JavaScript" },
+    { img: tailwindcss, label: "TailwindCSS" },
     { img: ts, label: "TypeScript" },
+    { img: reactjs, label: "Reactjs" },
+    { img: nextjs, label: "Nextjs" },
+    { img: astro, label: "AstroJS" },
     { img: git, label: "Git" },
     { img: mysql, label: "MySQL" },
   ];
 
   return (
     <section className="my-6">
-      <h2 className="text-4xl font-display my-8 underline font-semibold">
+      <h2 className="text-4xl font-display mb-8 underline font-semibold">
         Skills
       </h2>
       <ul className="flex flex-wrap gap-4 justify-center">

@@ -9,6 +9,7 @@ import nextjs from "./nextjs.svg";
 import reactjs from "./reactjs.svg";
 import globe from "./globe.svg";
 import github from "./github.svg";
+import astro from "./astro.svg";
 
 export {
   html,
@@ -22,4 +23,5 @@ export {
   reactjs,
   globe,
   github,
+  astro,
 };
