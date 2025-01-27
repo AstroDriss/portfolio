@@ -1,10 +1,9 @@
-import { useState } from "react";
 import { IoClose } from "react-icons/io5";
 import { MdOutlineSegment } from "react-icons/md";
 
 const textLinks: { label: string; href: string }[] = [
   { label: "About", href: "/#" },
-  { label: "Work", href: "/#projects" },
+  { label: "projects", href: "/#projects" },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -14,8 +13,9 @@ const BlogLogo = () => (
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 886.74 579.75"
     aria-hidden="true"
-    width="30"
+    width="20"
     className="inline"
+    fill="currentColor"
   >
     <path
       class="cls-2"
@@ -29,10 +29,9 @@ const BlogLogo = () => (
 );
 
 const Navigation = () => {
-  const [toggle, setToggle] = useState(false);
   return (
-    <nav>
-      <ul className="hidden sm:flex gap-4 items-center">
+    <nav className="flex items-center gap-5">
+      <ul className="hidden sm:flex gap-10 items-center">
         {textLinks.map(({ label, href, blank }) => (
           <li key={label}>
             <a className={"nav-link"} href={href}>
@@ -40,51 +39,17 @@ const Navigation = () => {
             </a>
           </li>
         ))}
-        <li>
-          <a
-            class="flex items-center gap-1 bg-gradient-to-l from-[#5f9aff] to-[#03eeaa] hover:brightness-110 transition-all py-1 px-4 rounded-xl"
-            href="https://douiri.org"
-            target="_blank"
-          >
-            <BlogLogo />
-            Blog
-          </a>
-        </li>
       </ul>
 
-      <button
-        aria-expanded={toggle}
-        aria-label={toggle ? "close menu" : "open menu"}
-        onClick={() => setToggle(!toggle)}
-        className="sm:hidden flex flex-col gap-[6px] w-8 items-end"
-      >
-        <span className="w-full h-[3px] rounded-md bg-black"></span>
-        <span className="w-full h-[3px] rounded-md bg-black"></span>
-        <span className="w-full h-[3px] rounded-md bg-black"></span>
-      </button>
-      <ul
-        className={`${
-          toggle ? "block" : "hidden"
-        } flex-col mobile-nav absolute w-full mt-3 col-span-2 sm:hidden gap-2 overflow-hidden right-0 shadow-md border-2 border-white bg-white rounded-xl top-11`}
-      >
-        {textLinks.map(({ label, href, blank }) => (
-          <li key={href}>
-            <a className={`px-8 py-3 block text-black`} href={href}>
-              {label}
-            </a>
-          </li>
-        ))}
-        <li>
-          <a
-            class="flex items-center gap-4 bg-gradient-to-l from-[#5f9aff] to-[#03eeaa] hover:brightness-110 px-8 py-3 rounded-xl"
-            href="https://douiri.org"
-            target="_blank"
-          >
-            <BlogLogo />
-            Blog
-          </a>
-        </li>
-      </ul>
+        <a
+        class="flex items-center bg-black text-Background gap-2 hover:brightness-110 transition-all py-2 px-8 rounded-full"
+        href="https://douiri.org"
+        target="_blank"
+        >
+        <BlogLogo />
+        Blog
+        </a>
+
     </nav>
   );
 };
