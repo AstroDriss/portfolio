@@ -31,13 +31,10 @@ const RecentArticles = () => {
     return () => controller.abort();
   }, []);
 
+  if(error) return <p className="py-1 px-2 bg-red-200 text-red-700 rounded-xl text-center">{error}</p>
+
   return (
     <>
-      {error && (
-        <p className="py-1 px-2 bg-red-200 text-red-700 rounded-xl text-center">
-          {error}
-        </p>
-      )}
       <div className="grid gap-3 grid-cols-1 min-[500px]:grid-cols-2 md:grid-cols-3">
         {isLoading &&
           [1, 2, 3].map((item) => (
