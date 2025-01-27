@@ -42,7 +42,7 @@ const Navigation = () => {
       </ul>
 
         <a
-        class="flex items-center bg-black text-Background gap-2 hover:brightness-110 transition-all py-2 px-8 rounded-full"
+        className="flex items-center bg-black text-Background gap-2 hover:brightness-110 transition-all py-2 px-8 rounded-full"
         href="https://douiri.org"
         target="_blank"
         >
