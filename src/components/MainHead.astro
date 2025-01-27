@@ -62,6 +62,7 @@ const {
   gtag("config", "G-CKLC8LSENB");
 </script>
 
+  {/* TODO: include hasPart property */}
 <script is:inline type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -71,32 +72,33 @@ const {
     "alternateName": "driss",
     "name": "Idriss Douiri",
     "birthDate": "2005-01-23",
-    "height": "176 cm",
     "email": "drisspennywise@gmail.com",
     "jobTitle": "Web Developer",
-    "image": "",
-    "gender": "http://schema.org/Male",
+    "image": "https://douiri.org/images/author/idriss-douiri.jpg",
     "url": "https://idriss.douiri.org",
     "description": "a web developer specializing in front-end and back-end technologies.",
     "sameAs": [
       "https://www.instagram.com/drs_artz/",
-      "https://www.linkedin.com/in/johndoe",
+      "https://www.linkedin.com/in/idriss-douiri-34a69a229/",
       "https://twitter.com/drs_artz",
       "https://www.facebook.com/drsartz/",
-      "https://github.com/AstroDriss"
+      "https://github.com/AstroDriss",
+      "https://douiri.org"
     ],
+    "hasOccupation": {
+      "@type": "Occupation",
+      "name": "Web Developer",
+      "skills": ["HTML", "CSS", "JavaScript", "React", "Nextjs", "Python", "PHP", "MySQL"],
+      "description": "Specializing in building responsive and scalable web applications."
+    },
     "alumniOf": {
       "@type": "EducationalOrganization",
       "name": "Université Ibn Zohr",
       "url": "https://www.uiz.ac.ma/"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebSite",
+      "@id": "https://idriss.douiri.org"
     }
-  }
-</script>
-
-<script is:inline type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "url": "https://idriss.douiri.org/"
   }
 </script>
