@@ -44,15 +44,15 @@ const contact = () => {
       <h2 className="font-semibold font-display text-4xl mb-8 underline">
         Contact Me
       </h2>
-      <div class="grid md:grid-cols-2 items-center">
-        <p class="md:text-6xl mb-6 md:font-extrabold md:text-transparent md:bg-clip-text md:bg-gradient-to-l from-[#5f9aff] to-[#03eeaa] leading-[1.5]">
+      <div className="grid md:grid-cols-2 items-center">
+        <p className="md:text-6xl mb-6 md:font-extrabold md:text-transparent md:bg-clip-text md:bg-gradient-to-l from-[#5f9aff] to-[#03eeaa] leading-[1.5]">
           Let's create something amazing together!
         </p>
 
         <form className="flex flex-col gap-4" onSubmit={sendEmail}>
           <div className="relative">
             <input
-              className="border w-full rounded-md p-2 peer placeholder:opacity-0 border-gray-400 bg-gray-50 focus:outline-sky-500"
+              className="border w-full rounded-md p-2 peer placeholder:opacity-0 border-gray-400 bg-Background focus:outline-sky-500"
               type="text"
               name="from_name"
               placeholder="name"
@@ -61,7 +61,7 @@ const contact = () => {
             />
             <label
               htmlFor="name"
-              className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-gray-50"
+              className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-Background"
             >
               Name
             </label>
@@ -69,7 +69,7 @@ const contact = () => {
 
           <div className="relative">
             <input
-              className="border w-full rounded-md p-2 peer placeholder:opacity-0 border-gray-400 bg-gray-50 focus:outline-sky-500"
+              className="border w-full rounded-md p-2 peer placeholder:opacity-0 border-gray-400 bg-Background focus:outline-sky-500"
               type="email"
               name="email_from"
               placeholder="email@domain.com"
@@ -77,7 +77,7 @@ const contact = () => {
               required
             />
             <label
-              className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-gray-50"
+              className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-Background"
               htmlFor="email"
             >
               Email
@@ -86,14 +86,14 @@ const contact = () => {
 
           <div className="relative">
             <textarea
-              className="border w-full rounded-md p-2 peer h-60 placeholder:opacity-0 border-gray-400 bg-gray-50 focus:outline-sky-500"
+              className="border w-full rounded-md p-2 peer h-60 placeholder:opacity-0 border-gray-400 bg-Background focus:outline-sky-500"
               placeholder="message..."
               name="message"
               id="message"
               required
             ></textarea>
             <label
-              className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-gray-50"
+              className="absolute left-2 -top-[0.8rem] peer-placeholder-shown:top-2 peer-focus:-top-[0.8rem] peer-focus:text-sky-500 text-gray-600 transition-all pointer-events-none bg-Background"
               htmlFor="message"
             >
               message

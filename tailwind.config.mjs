@@ -4,8 +4,17 @@ export default {
   theme: {
     fontFamily: {
       display: ["meow script"],
+      },
+    extend: {
+      colors: {
+        Background: {
+          DEFAULT: "#fcfaf4"
+        },
+        Heading: {
+          DEFAULT: "#111"
+        }
+      },
     },
-    extend: {},
   },
   plugins: [],
 };
