@@ -12,7 +12,8 @@ html {
   color: theme("colors.slate[600]");
   transition: color 250ms ease-in-out;
 }
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus {
   color: theme("colors.slate[800]");
 }
 .nav-link::before {
@@ -25,7 +26,8 @@ html {
   background-color: theme("colors.slate[700]");
   transition: width 250ms ease-in-out;
 }
-.nav-link:hover::before {
+.nav-link:hover::before,
+.nav-link:focus::before {
   width: 100%;
 }
 

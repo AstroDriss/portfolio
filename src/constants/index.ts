@@ -21,7 +21,7 @@ export const projects = [
     repo: "https://github.com/AstroDriss/tic-tac-toe-minimax",
     live: "https://tic-tac-toe-minimax-gamma.vercel.app/",
     tech: ["nextjs", "ts", "tailwindcss"],
-    desc: "using the minimax algorithme",
+    desc: "play vs unbeatable AI using the minimax algorithm",
   },
   {
     id: 5,
@@ -47,7 +47,7 @@ export const projects = [
     repo: "https://github.com/AstroDriss/Frontend-Mentor-Todo-app",
     live: "https://frontend-mentor-todo-app-sigma.vercel.app/",
     tech: ["reactjs", "ts", "tailwindcss"],
-    desc: "with drag and drop functionality for reordering and theme toggle",
+    desc: "with drag and drop functionality for reordering, and dark/light theme toggle",
   },
   {
     id: 4,

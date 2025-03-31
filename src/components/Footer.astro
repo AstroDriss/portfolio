@@ -13,89 +13,97 @@ const currentYear = new Date().getFullYear();
 <footer
   class="bg-gray-800 text-gray-200 border-t mt-12 py-6 px-4 mx-auto max-w-7xl rounded-2xl mb-2"
 >
-  <div
-    class="grid md:grid-cols-4 sm:grid-cols-2 gap-4 justify-items-center items-center"
-  >
-    <address class="text-center sm:text-left">
-      <p>
-        Thank you for visiting my portfolio. If you have any questions or would
-        like to discuss potential collaborations, please feel free to contact
-        me.
-      </p>
-    </address>
-
-    <ul>
-      <li>
-        <p class="text-gray-50 font-semibold text-center sm:text-left">About</p>
-      </li>
-      <li class="text-center sm:text-left">
-        <a href="https://douiri.org">Blog</a>
-      </li>
-      <li class="text-center sm:text-left"><a href="/privacy">Privacy</a></li>
-    </ul>
-
-    <ul>
-      <li>
-        <p class="text-gray-50 font-semibold text-center sm:text-left">
-          Contact
+  <div class="">
+    <div
+      class="grid md:grid-cols-4 sm:grid-cols-2 gap-4 justify-items-center items-center"
+    >
+      <address class="text-center sm:text-left">
+        <p>
+          Thank you for visiting my portfolio. If you have any questions or
+          would like to discuss potential collaborations, please feel free to
+          contact me.
         </p>
-      </li>
-      <li>
-        <a
-          href="tel:+212651501766"
-          class="flex gap-2 items-center justify-center sm:justify-start"
-          ><Phone />+212 651 501 766</a
-        >
-      </li>
-      <li>
-        <a
-          href="mailto:drisspennywise@gmail.com"
-          class="flex gap-2 items-center justify-center sm:justify-start"
-          ><Envelope />drisspennywise@gmail.com</a
-        >
-      </li>
-    </ul>
+      </address>
 
-    <ul class="flex gap-2">
-      <li>
-        <a target="_blank" href="https://github.com/AstroDriss" title="github">
-          <GithubLogo size={30} />
-          <span class="sr-only">github</span>
-        </a>
-      </li>
+      <ul>
+        <li>
+          <p class="text-gray-50 font-semibold text-center sm:text-left">
+            About
+          </p>
+        </li>
+        <li class="text-center sm:text-left">
+          <a href="https://douiri.org">Blog</a>
+        </li>
+        <li class="text-center sm:text-left"><a href="/privacy">Privacy</a></li>
+      </ul>
 
-      <li>
-        <a
-          target="_blank"
-          href="https://www.linkedin.com/in/driss-douiri-34a69a229/"
-          title="linkedin"
-        >
-          <LinkedinLogo size={30} />
-          <span class="sr-only">linkedin</span>
-        </a>
-      </li>
-      <li>
-        <a
-          target="_blank"
-          href="https://www.instagram.com/drs_artz/"
-          title="instagram"
-        >
-          <InstagramLogo size={30} />
-          <span class="sr-only">instagram</span>
-        </a>
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <p class="text-gray-50 font-semibold text-center sm:text-left">
+            Contact
+          </p>
+        </li>
+        <li>
+          <a
+            href="tel:+212651501766"
+            class="flex gap-2 items-center justify-center sm:justify-start"
+            ><Phone />+212 651 501 766</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:drisspennywise@gmail.com"
+            class="flex gap-2 items-center justify-center sm:justify-start"
+            ><Envelope />drisspennywise@gmail.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="flex gap-2">
+        <li>
+          <a
+            target="_blank"
+            href="https://github.com/AstroDriss"
+            title="github"
+          >
+            <GithubLogo size={30} />
+            <span class="sr-only">github</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/driss-douiri-34a69a229/"
+            title="linkedin"
+          >
+            <LinkedinLogo size={30} />
+            <span class="sr-only">linkedin</span>
+          </a>
+        </li>
+        <li>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/drs_artz/"
+            title="instagram"
+          >
+            <InstagramLogo size={30} />
+            <span class="sr-only">instagram</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <p class="text-center mt-10">&copy; {currentYear} Idriss Douiri</p>
   </div>
+  <style>
+    footer a {
+      transition: color 150ms;
+    }
 
-  <p class="text-center mt-10">&copy; {currentYear} Idriss Douiri</p>
+    footer a:hover,
+    footer a:focus {
+      color: theme("colors.gray[50]");
+    }
+  </style>
 </footer>
-<style>
-  footer a {
-    transition: color 150ms;
-  }
-
-  footer a:hover,
-  footer a:focus {
-    color: theme("colors.gray[50]");
-  }
-</style>

@@ -7,9 +7,15 @@ import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), partytown({
-    config: {
-      forward: ["dataLayer.push"]
-    }
-  }), compress()]
+  site: "https://idriss.douiri.org",
+  integrations: [
+    react(),
+    tailwind(),
+    partytown({
+      config: {
+        forward: ["dataLayer.push"],
+      },
+    }),
+    compress(),
+  ],
 });
