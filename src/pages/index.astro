@@ -6,8 +6,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import Projects from "../components/Projects.astro";
 import About from "../components/About.astro";
-import Contact from "../components/contact.tsx";
-import Skills from "../components/Skills.tsx";
+import Skills from "../components/Skills.astro";
+import Contact from "../components/Contact.tsx";
 import RecentArticles from "../components/RecentArticles.tsx";
 ---
 
@@ -17,7 +17,7 @@ import RecentArticles from "../components/RecentArticles.tsx";
 
     <About />
 
-    <Skills client:visible />
+    <Skills />
 
     <section id="projects">
       <h2 class="font-semibold text-4xl mb-8 font-display underline">

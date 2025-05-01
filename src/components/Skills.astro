@@ -1,0 +1,44 @@
+---
+import {
+  css,
+  html,
+  js,
+  nextjs,
+  reactjs,
+  tailwindcss,
+  ts,
+  git,
+  mysql,
+  astro,
+} from "../assets/icons";
+
+const skills = [
+  { img: html, label: "HTML" },
+  { img: css, label: "CSS" },
+  { img: js, label: "JavaScript" },
+  { img: tailwindcss, label: "TailwindCSS" },
+  { img: ts, label: "TypeScript" },
+  { img: reactjs, label: "Reactjs" },
+  { img: nextjs, label: "Nextjs" },
+  { img: astro, label: "AstroJS" },
+  { img: git, label: "Git" },
+  { img: mysql, label: "MySQL" },
+];
+---
+
+<section class="my-6">
+  <h2 class="text-4xl font-display mb-8 underline font-semibold">Skills</h2>
+  <ul class="flex flex-wrap gap-4 justify-center">
+    {
+      skills.map(({ img, label }) => (
+        <li
+          class="h-16 px-4 text-rose-950 gap-3 rounded-[1.5rem] bg-rose-50 flex justify-center items-center before:border before:border-gray-400 before:absolute relative before:inset-0 before:rounded-[inherit] before:-left-1 before:-top-1"
+          title={label}
+        >
+          <img src={img.src} alt="" width={30} />
+          {label}
+        </li>
+      ))
+    }
+  </ul>
+</section>

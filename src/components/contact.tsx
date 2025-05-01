@@ -1,7 +1,7 @@
 import emailjs from "@emailjs/browser";
 import { useState, type FormEvent } from "react";
 
-const contact = () => {
+const Contact = () => {
   const [isSending, setSending] = useState(false);
 
   const isInputsEmpty = (form: HTMLFormElement) => {
@@ -134,4 +134,4 @@ const contact = () => {
   );
 };
 
-export default contact;
+export default Contact;
