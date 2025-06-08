@@ -17,11 +17,6 @@ const {
 <meta name="viewport" content="width=device-width" />
 <title>{title}</title>
 
-<meta
-  name="keywords"
-  content="portfolio,developer,douiri idriss,d'ouiri,driss,person,web developer,programmer"
-/>
-
 <link rel="sitemap" href="/sitemap.xml" />
 <meta name="language" content="English" />
 <meta name="author" content="Idriss Douiri" />
@@ -49,10 +44,11 @@ const {
 
 <!-- Google tag (gtag.js) -->
 <script
+  is:inline
   type="text/partytown"
   async
   src="https://www.googletagmanager.com/gtag/js?id=G-CKLC8LSENB"></script>
-<script type="text/partytown">
+<script is:inline type="text/partytown">
   window.dataLayer = window.dataLayer || [];
   function gtag() {
     dataLayer.push(arguments);
@@ -62,7 +58,7 @@ const {
   gtag("config", "G-CKLC8LSENB");
 </script>
 
-  {/* TODO: include hasPart property */}
+{/* TODO: include hasPart property */}
 <script is:inline type="application/ld+json">
   {
     "@context": "http://schema.org",
@@ -88,7 +84,16 @@ const {
     "hasOccupation": {
       "@type": "Occupation",
       "name": "Web Developer",
-      "skills": ["HTML", "CSS", "JavaScript", "React", "Nextjs", "Python", "PHP", "MySQL"],
+      "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "React",
+        "Nextjs",
+        "Python",
+        "PHP",
+        "MySQL"
+      ],
       "description": "Specializing in building responsive and scalable web applications."
     },
     "alumniOf": {
