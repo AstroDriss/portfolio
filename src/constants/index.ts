@@ -8,6 +8,8 @@ import anime from "../assets/screenshot-home.png";
 import animeWebp from "../assets/screenshot-home.webp";
 import connect4 from "../assets/connect-four.png";
 import connect4Webp from "../assets/connect-four.webp";
+import cornerInverter from "../assets/corner-inverter.png";
+import cornerInverterWebp from "../assets/corner-inverter.webp";
 
 export const projects = [
   {
@@ -60,7 +62,20 @@ export const projects = [
     repo: "https://github.com/AstroDriss/anime-app",
     live: "https://anime-app-sage.vercel.app/",
     tech: ["reactjs", "ts", "tailwindcss", "API"],
-    desc: "Using the Jikan API to display information about animes such as characters, episodes, etc...",
+    desc: "Using the Jikan API to display information about anime such as characters, episodes, etc...",
+  },
+  {
+    id: 5,
+    title: "Corner Inverter",
+    img: {
+      alt: "Corner Inverter Preview",
+      src: cornerInverter,
+      webp: cornerInverterWebp,
+    },
+    repo: "https://github.com/AstroDriss/inverted-corners-generator",
+    live: "https://corner-inverter.douiri.org/?utm_source=portfolio",
+    tech: ["astrojs", "reactjs", "tailwindcss"],
+    desc: "CSS inverted border radius generator.",
   },
   {
     id: 3,
