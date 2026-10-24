@@ -3,8 +3,13 @@ html {
 }
 @font-face {
   font-family: "meow script";
-  src: local("meow script"),
+  src:
+    local("meow script"),
     url("/fonts/MeowScript-Regular.ttf") format("truetype");
+}
+
+section {
+  margin: 5rem 0;
 }
 
 .nav-link {

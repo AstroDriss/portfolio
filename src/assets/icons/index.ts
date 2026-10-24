@@ -10,6 +10,8 @@ import reactjs from "./reactjs.svg";
 import globe from "./globe.svg";
 import github from "./github.svg";
 import astro from "./astro.svg";
+import c from "./C_Programming_Language.svg";
+import tux from "./tux.svg";
 
 export {
   html,
@@ -24,4 +26,6 @@ export {
   globe,
   github,
   astro,
+  c,
+  tux,
 };
