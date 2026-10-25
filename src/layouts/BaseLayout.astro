@@ -3,6 +3,7 @@
 import MainHead from "../components/MainHead.astro";
 import Nav from "../components/Nav.astro";
 import Footer from "../components/Footer.astro";
+import "lenis/dist/lenis.css";
 
 interface Props {
   title?: string | undefined;
@@ -16,6 +17,12 @@ const { title, description } = Astro.props;
   <head>
     <MainHead title={title} description={description} />
     <slot name="head" />
+    <script>
+      import Lenis from "lenis";
+      const lenis = new Lenis({
+        autoRaf: true,
+      });
+    </script>
   </head>
   <body class="bg-Background">
     <div class="max-w-7xl mx-auto px-4">
